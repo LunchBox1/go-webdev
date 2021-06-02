@@ -53,7 +53,7 @@ func main() {
 	fmt.Println(p1.walk())
 }*/
 
-/*number 7, 8, 9*/
+/*number 7, 8, 9, 10
 type vehicle struct {
 	doors int
 	color string
@@ -102,4 +102,54 @@ func main() {
 	fmt.Println(tacoma.transportationDevice())
 	report(m2)
 	report(tacoma)
+}*/
+
+/*number 11,12,13,14,15,16
+type gator int
+
+type flamingo bool
+
+type swapCreature interface {
+	greeting()
+}
+
+func (g gator) greeting() {
+	fmt.Println("Hello, I am a gator.")
+}
+func (f flamingo) greeting() {
+	fmt.Println("Hello, I am pink and beautiful and wonderful.")
+}
+func bayou(s swapCreature) {
+	s.greeting()
+}
+
+func main() {
+	var g1 gator
+	g1 = 2
+	var f1 flamingo
+	f1 = true
+	//fmt.Println(g1)
+	//fmt.Printf("%T\n", g1)
+	//var x int
+	//x = int(g1)
+	//fmt.Println(x)
+	//g1.greeting()
+
+	bayou(g1)
+	bayou(f1)
+}*/
+
+/*number 17*/
+func main() {
+	s := "i'm sorry dave i can't do that"
+	fmt.Println(s)
+	fmt.Println([]byte(s))
+	fmt.Println(string([]byte(s)))
+	fmt.Println(string([]byte(s)[:14]))
+	fmt.Println(string([]byte(s)[10:22]))
+	fmt.Println(string([]byte(s)[17:]))
+
+	for _, v := range s {
+		fmt.Println(string(v))
+	}
 }
