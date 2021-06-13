@@ -17,10 +17,6 @@ type car struct {
 	Model        string
 	Doors        int
 }
-type items struct {
-	Wisdom    []sage
-	Transport []car
-}
 
 func init() {
 	tpl = template.Must(template.ParseFiles("tpl.gohtml"))
@@ -55,9 +51,12 @@ func main() {
 	sages := []sage{b, g, m}
 	cars := []car{f, c}
 
-	data := items{
-		Wisdom:    sages,
-		Transport: cars,
+	data := struct {
+		Wisdom    []sage
+		Transport []car
+	}{
+		sages,
+		cars,
 	}
 
 	err := tpl.ExecuteTemplate(os.Stdout, "tpl.gohtml", data)

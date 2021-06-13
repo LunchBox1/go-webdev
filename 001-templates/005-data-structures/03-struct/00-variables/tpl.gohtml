@@ -6,9 +6,9 @@
 </head>
 <body>
 <ul>
-    {{range .}}
-   <li>{{.Name}} - {{.Motto}}</li>
-   {{end}}
+    {{$x := .Name}}
+    {{$y := .Motto}}
+   <li>{{$x}} - {{$y}}</li>
 </ul>
 </body>
 </html>
