@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+{{.Southern.Region}}
+{{range .Southern.Hotels}}
+{{.Name}} - {{.Address}} - {{.City}} - {{.Zip}}
+{{end}}
+
+{{.Northern.Region}}
+{{range .Northern.Hotels}}
+{{.Name}} - {{.Address}} - {{.City}} - {{.Zip}}
+{{end}}
+
+{{.Central.Region}}
+{{range .Central.Hotels}}
+{{.Name}} - {{.Address}} - {{.City}} - {{.Zip}}
+{{end}}
+
+</body>
+</html>
