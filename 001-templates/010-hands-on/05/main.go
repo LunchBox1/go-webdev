@@ -12,7 +12,7 @@ import (
 
 /*
 -- encoding/csv
- - package "encoding" defines interfaces shared by other packages that conver data to and from byte-level and textual representations.
+ - package "encoding" defines interfaces shared by other packages that convert data to and from byte-level and textual representations.
  - package "csv" reads and writes comma-separated values (CSV) files.
  (encoding methods are not concurrency-safe)
  (an interface is a custom type that is used to specify a set of one or more method signatures)
